@@ -1,0 +1,71 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    /*kleuren*/
+
+    --primary-color: #FACC15; 
+
+    --background-color: #FFFFFF; 
+
+    --text-color: #000000; 
+
+    --border-color: #E0E0E0; 
+
+    /*fonts*/
+    --font-header: 'American-Typewriter-Bold', sans-serif; /*dik gedrukt*/
+    --font-paragraph: 'American-Typewriter-Regular', sans-serif; /*normaal*/
+}
+
+@font-face {
+    font-family: 'American-Typewriter-Regular';
+    src: url(fonts/american-typewriter-regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'American-Typewriter-Bold';
+    src: url(fonts/american-typewriter-bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Typografie */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.75rem;
+}
+
+p {
+    font-size: 1em;
+    font-family: var(--font-paragraph);
+}
+
+
+

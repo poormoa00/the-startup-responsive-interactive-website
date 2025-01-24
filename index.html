@@ -3,175 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 
     <title>Weird Cool Stuff</title>
 </head>
 
 <body>
     <header>
+
+      <!-- nav menu -->
         <nav>
-            <button>Menu</button>
-            <img src="#" alt="Weird Cool Stuff logo">
+            <img class="nav-logo" src="assets/weirdcoolstuff.png" alt="Weird Cool Stuff logo">
             <ul>
-                <li><a href="#">NL</a></li>
-                <li><a href="#">EN</a></li>
-                <li><a href="#"><img src="#" alt="Account"></a></li>
-                <li><a href="#"><img src="#" alt="Favorieten"></a></li>
-                <li><a href="#"><img src="#" alt="Winkelmand"></a></li>
+                <li><a href="#"><img src="assets/vlag-nederland.svg" alt="NL"></a></li>
+                <li><a href="#"><img src="assets/person.svg" alt="Account"></a></li>
+                <li><a href="#"><img src="assets/favorite.svg" alt="Favorieten"></a></li>
+                <li><a href="#"><img src="assets/add-to-card-icon.svg" alt="Winkelmand"></a></li>
             </ul>
         </nav>
+
+        <!-- button hamburger menu -->
+        <button id="menu-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categorieën</a></li>
+                <li><a href="#">Nieuwe producten</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
         <form class="zoek-balk">
             <input type="text" id="zoeken" placeholder="Waar ben je naar opzoek?">
-            <button type="submit">Zoek</button>
+            <button type="submit"></button>
         </form>
     </header>
 
     <main>
+
+      <!-- Banner aanbevolen product -->
         <section class="aanbevolen-producten">
-            <h2>Hele vreemde mokken</h2>
-            <p>6,99</p>
+            <p class="banner-nieuw">NIEUW!</p>
+            <h1>Hele vreemde<br>mokken</h1>
+            <span class="prijs">6,99</span>
             <button>Bekijk alle mokken</button>
-            <img src="#" alt="Afbeelding mokken">
         </section>
 
+        <section class="info-balk">
+          <div class="info-item">
+            <span class="check-icon">✔</span>
+            <p>Besteld voor 23:59, morgen in je toko</p>
+          </div>
+          <div class="info-item">
+            <span class="check-icon">✔</span>
+            <p>Gratis verzending op bestellingen boven €41</p>
+          </div>
+          <div class="info-item">
+            <span class="check-icon">✔</span>
+            <p>Gratis retour</p>
+          </div>
+        </section>
+        
+        <!-- populaire categorieen -->
         <section class="categorieën">
             <h2>Populaire categorieën</h2>
-            <ul>
+            <ul class="carousel">
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/paraplu.png" alt=""></a>
                     <p>Nieuw binnen</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/smiley--tshirt.png" alt=""></a>
                     <p>Mode</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/burger.png" alt=""></a>
                     <p>Eten & Drinken</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/schep.png" alt=""></a>
                     <p>Tuin</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/zeep.png" alt=""></a>
                     <p>Bad & Douche</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/cadeau.png" alt=""></a>
                     <p>Cadeau</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/puppy.png" alt=""></a>
                     <p>Inspiratie</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/dolfijn-lepel.png" alt=""></a>
                     <p>Keuken</p>
                 </li>
 
                 <li>
-                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="assets/kussen.png" alt=""></a>
                     <p>Huis</p>
                 </li>
             </ul>
         </section>
 
         <!-- Nieuwe producten Sectie -->
-<section>
-    <h2>Nieuwe aparte producten</h2>
+<section class="nieuwe-producten">
+    <h2 class="product-titel">Nieuwe aparte producten</h2>
 
     <ul class="producten">
         <!-- Product 1 -->
         <li class="product">
-            <img src="#" alt="Product afbeelding">
-            <h3>Tandenkaars</h3>
-            <p>4.99</p>
+            <img src="assets/tandkaars.png" alt="Product afbeelding">
+            <p>Tandenkaars</p>
+            <div class="prijs-button-container">
+            <span>4.99</span>
             <button class="image-button">
-                <img src="#" alt="Toevoegen aan winkelwagen">
-              </button>
-              
+                <img src="assets/add-to-card-icon.svg" alt="Toevoegen aan winkelwagen">
+                +
+              </button>     
+              </div> 
         </li>
 
         <!-- Product 2 -->
         <li class="product">
-            <img src="#" alt="Product afbeelding">
-            <h3>Tandenkaars</h3>
-            <p>4.99</p>
+            <img src="assets/borstel.png" alt="Product afbeelding">
+            <p>Kattenborstel</p>
+            <div class="prijs-button-container">
+            <span>3.49</span>
             <button class="image-button">
-                <img src="#" alt="Toevoegen aan winkelwagen">
+                <img src="assets/add-to-card-icon.svg" alt="Toevoegen aan winkelwagen">
+                +
               </button>
+            </div>
         </li>
 
         <!-- Product 3 -->
         <li class="product">
-            <img src="#" alt="Product afbeelding">
-            <h3>Tandenkaars</h3>
-            <p>4.99</p>
+            <img src="assets/pantoffels.png" alt="Product afbeelding">
+            <p>Joker pantoffels</p>
+            <div class="prijs-button-container">
+            <span>9.99</span>
             <button class="image-button">
-                <img src="#" alt="Toevoegen aan winkelwagen">
+                <img src="assets/add-to-card-icon.svg" alt="Toevoegen aan winkelwagen">
+                +
               </button>
+              </div>
         </li>
 
         <!-- Product 4 -->
         <li class="product">
-            <img src="#" alt="Product afbeelding">
-            <h3>Tandenkaars</h3>
-            <p>4.99</p>
+            <img src="assets/peer.png" alt="Product afbeelding">
+            <p>Perenlamp</p>
+            <div class="prijs-button-container">
+            <span>15.49</span>
             <button class="image-button">
-                <img src="#" alt="Toevoegen aan winkelwagen">
+                <img src="assets/add-to-card-icon.svg" alt="Toevoegen aan winkelwagen">
+                +
               </button>
+              </div>
         </li>
 
         <!-- Product 5 -->
         <li class="product">
-            <img src="#" alt="Product afbeelding">
-            <h3>Tandenkaars</h3>
-            <p>4.99</p>
+            <img src="assets/pan.png" alt="Product afbeelding">
+            <p>Pangezicht</p>
+            <div class="prijs-button-container">
+            <span>21.99</span>
             <button class="image-button">
-                <img src="#" alt="Toevoegen aan winkelwagen">
+                <img src="assets/add-to-card-icon.svg" alt="Toevoegen aan winkelwagen">
+                +
               </button>
+              </div>
         </li>
     </ul>
 
 </section>
 
+<!-- promo banner -->
 <div class="promotie">
-   
-    <img src="#" alt="Juichende persoon met confetti" class="banner-afbeelding">
+    <img src="assets/juigende vrouw.png" alt="Juichende persoon met confetti" class="banner-afbeelding">
   
     <ul class="promo-cards">
-     
       <li class="promo-card">
-        <article class="kaart-inhoud">
-          <h2 class="kaart-titel">Helemaal blitz tijdens de Après-ski</h2>
-          <p>Maak je klaar om te schitteren op de piste én in de Après-ski! </p>
-          <img class="kaart-afbeelding" src="#" alt="Persoon met winterkleding">
-          <a href="#" class="kaart-knop">Shop nu!</a>
-        </article>
+          <article class="kaart-inhoud">
+              <h2 class="kaart-titel">Helemaal blitz tijdens<br>de Après-ski</h2>
+              <p>Maak je klaar om te schitteren op<br>de piste én in de Après-ski! </p>
+              <a href="#" class="kaart-knop">Shop nu!</a>
+              <img class="kaart-afbeelding" src="assets/vrouw roze.png" alt="Persoon met winterkleding">
+          </article>
       </li>
 
       <li class="promo-card">
-        <article class="kaart-inhoud">
-          <h2 class="kaart-titel">Gekke cadeaus voor gekke mensen</h2>
-          <p>Op zoek naar het perfecte cadeau voor die ene gekke vriend(in)?</p>
-          <img class="kaart-afbeelding" src="#" alt="Persoon met winterkleding">
-          <a href="#" class="kaart-knop">Shop nu!</a>
-        </article>
+          <article class="kaart-inhoud">
+              <h2 class="kaart-titel">Gekke cadeaus voor<br>gekke mensen</h2>
+              <p>Op zoek naar het perfecte cadeau<br>voor die ene gekke vriend(in)?</p>
+              <a href="#" class="kaart-knop">Shop nu!</a>
+              <img class="kaart-afbeelding" src="assets/cadeautjes blauw.png" alt="Persoon met winterkleding">
+          </article>
       </li>
-  
-    </ul>
+   </ul>
 </div>
   
+<!-- inspiratie kaarten -->
   <section class="tips-inspiratie">
     <h2>Tips & inspiratie</h2>
   
@@ -179,51 +228,51 @@
       <!-- Eerste inspiratiekaart -->
       <li class="inspiratie-item">
         <article class="inspiratie-kaart">
-          <img class="kaart-afbeelding" src="#" alt="Ballonnen met het jaar 2025">
+          <img class="afbeelding-2025" src="assets/2025.png" alt="Ballonnen met het jaar 2025">
           <h3>Leuke dingen voor het nieuwe jaar</h3>
           <p class="kaart-tekst">Begin het jaar goed met deze leuke ideeën en inspiratie voor een knallend nieuw jaar!</p>
-          <a href="#" class="lees-meer">Lees meer ></a>
+          <a href="#" class="lees-meer">Lees meer</a>
         </article>
       </li>
   
       <!-- Tweede inspiratiekaart -->
       <li class="inspiratie-item">
         <article class="inspiratie-kaart">
-          <img class="kaart-afbeelding" src="#" alt="Dinosaurus met feesthoed">
+          <img class="afbeelding-dino" src="assets/dino.png" alt="Dinosaurus met feesthoed">
           <h3>9 tips voor een bizarre avond</h3>
           <p class="kaart-tekst">Maak de avond iets bijzonders! Van tips voor een gekke avond tot verrassende ideeën voor jouw feest.</p>
-          <a href="#" class="lees-meer">Lees meer ></a>
+          <a href="#" class="lees-meer">Lees meer</a>
         </article>
       </li>
   
       <!-- Derde inspiratiekaart -->
       <li class="inspiratie-item">
         <article class="inspiratie-kaart">
-          <img class="kaart-afbeelding" src="#" alt="Creatief opgemaakt bord met eten">
+          <img class="afbeelding-bord" src="assets/bord.png" alt="Creatief opgemaakt bord met eten">
           <h3>3 abnormale recepten</h3>
-          <p class="kaart-tekst">Op zoek naar iets verrassends? Probeer deze 3 abnormale recepten voor een creatieve culinaire ervaring!</p>
-          <a href="#" class="lees-meer">Lees meer ></a>
+          <p class="kaart-tekst">Op zoek naar iets verrassends? Probeer deze 3 recepten voor een creatieve culinaire ervaring!</p>
+          <a href="#" class="lees-meer">Lees meer</a>
         </article>
       </li>
     </ul>
   </section>
   
+  <!-- aanmelden als member sectie -->
   <section class="member-section">
-    <h1>Word een member bij Weird Cool Stuff!</h1>
+    <h2>Word een member bij Weird Cool Stuff!</h2>
     <ul class="member-benefits">
       <li>Als eerste een kijkje in onze nieuwe collectie!</li>
       <li>Uitnodiging voor onze exclusieve member avond</li>
       <li>Leuke win-acties!</li>
     </ul>
     <a href="#" class="member-button">Word member!</a>
-    <figure>
-      <img src="#" alt="Lachende vrouw met telefoon" class="member-image">
-      <img src="#" alt="Weird Cool Stuff Member logo" class="member-logo">
-    </figure>
+      <img src="assets/lachende vrouw.png" alt="Lachende vrouw met telefoon" class="member-image">
+      <img src="assets/logo wcs.png" alt="Weird Cool Stuff Member logo" class="member-logo">
   </section>
   
  </main>
 
+ <!-- Categories footer -->
  <footer>
 
     <section class="footer-categories">
@@ -292,36 +341,38 @@
         </ul>
       </section>
       
+      <!-- Contact -->
       <section class="footer-service">
         <h2><a href="#">Service</a></h2>
         <h2><a href="#">Over ons</a></h2>
       </section>
       
+      <!-- sociale media -->
       <section class="footer-socials">
         <h2>Volg ons</h2>
         <ul>
 
           <li>
             <a href="#" class="social-icon">
-              <img src="#" alt="X">
+              <img src="assets/x.png" alt="X">
             </a>
           </li>
 
           <li>
             <a href="#" class="social-icon">
-              <img src="#" alt="Facebook">
+              <img src="assets/facebook.png" alt="Facebook">
             </a>
           </li>
 
           <li>
             <a href="#" class="social-icon">
-              <img src="#" alt="Youtube">
+              <img src="assets/youtube.png" alt="Youtube">
             </a>
           </li>
 
           <li>
             <a href="#" class="social-icon">
-              <img src="#" alt="Instagram">
+              <img src="assets/instagram.png" alt="Instagram">
             </a>
           </li>
 
@@ -331,56 +382,49 @@
         </p>
       </section>
       
-     <div>
-        <figure>
-          <img src="weirdcoolstuff.png" alt="Weird Cool Stuff logo">
-        </figure>
-     </div>
-      
-     <div class="footer-logos">
-        <ul>
+      <!-- logos betaalmiddelen -->
+        <ul class="footer-logos">
 
           <li>
-            <img src="#" alt="Ideal logo">
+            <img src="assets/ideal.svg" alt="Ideal logo">
           </li>
 
           <li>
-            <img src="#" alt="Mastercard logo">
+            <img src="assets/mastercard.svg" alt="Mastercard logo">
           </li>
 
           <li>
-            <img src="#" alt="Visa logo">
+            <img src="assets/visa.svg" alt="Visa logo">
           </li>
 
           <li>
-            <img src="#" alt="PayPay logo">
+            <img src="assets/paypal.svg" alt="PayPay logo">
           </li>
 
           <li>
-            <img src="#" alt="Giropay logo">
+            <img src="assets/giropay.svg" alt="Giropay logo">
           </li>
 
           <li>
-            <img src="#" alt="Klarna logo">
+            <img src="assets/klarna.svg" alt="Klarna logo">
           </li>
 
           <li>
-            <img src="#" alt="Bankbetaling logo">
+            <img src="assets/bankbetaling.svg" alt="Bankbetaling logo">
           </li>
 
         </ul>
-     </div>
       
-      <div class="footer-legal">
-        <ul>
+        <ul class="footer-legal">
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Privacy Statement</a></li>
             <li><a href="#">Cookies</a></li>
         </ul>
         <p class="copyright"> &copy; 2025 - Weird Cool Stuff</p>
-      </div>
 
  </footer>
 </body>
 
+
+<script src="script.js"></script>
 </html>
